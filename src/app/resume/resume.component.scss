@@ -1,0 +1,134 @@
+@import "/src/styles.scss";
+
+*{
+  font-family: $font-Family;
+}
+.card{
+    border-radius: 20px;
+}
+.image-border{
+    border-radius:15px;
+}
+.top-panel{
+    border-radius: 15px;
+    background-color: rgb(30, 155, 155);
+    h1{
+        color:$white-Color
+    }
+}
+.top{
+    a{
+        color:beige
+    }
+}
+.whole{
+    
+    border-radius: 15px;
+    background-color: rgb(240, 225, 207);
+}
+li{
+    list-style-type: none;
+
+}
+.progress-bar{
+    border-radius: 10px;
+    display: inline-block;
+}
+.underline{
+    border-bottom: 2px solid $underline_color;
+    display: inline-block;
+}
+.some{
+    border-bottom: 2px solid $underline_color;
+    display: inline-block;
+}
+.left-panel{
+    border-radius: 15px;
+}
+.hard-skill,.soft-skill{
+    border-radius: 10px;
+    background-color: bisque;
+}
+.left-panel{
+    background-color:rgb(111, 251, 251);
+    color:$black-Color;
+}
+.border-left{
+    border-left: 2px black solid;
+}
+@media only screen and (max-width:767px){
+    img{
+        width:120px;
+        height:180px;
+    }
+    .whole{
+        margin-top:15px;
+    }
+}
+@media only screen and (min-width:767px){
+    img{
+        border-radius: 15px;
+        width:170px;
+        height: 220px;
+    }
+    .whole{
+        margin-top: 15px;
+    }
+    .ps{
+        margin-left: 60px;
+        margin-right:20px;
+    .p10{
+        margin-left: 35px;
+    }
+    .p9{
+        margin-left:65px;
+    }
+    .p8{
+        margin-left:30px;
+    }
+    .p7{
+        margin-left:15px;
+    }
+    .p6{
+        margin-left:10px;
+    }
+    .p4,.p5{
+        margin-left: 50px;
+    }
+    .p3{
+        margin-left: 5px;
+    }
+    .p2{
+        margin-left: 50px;
+    }
+    .p1{
+        margin-left:35px;
+    }
+    }
+}
+@media only screen and (min-width:1200px){
+    img{
+        border-radius: 20px;;
+        width:150px;
+        height:200px;
+    }
+    .whole{
+        margin-top:10px ;
+        border-radius: 15px;
+        background-color: bisque;
+    }
+    .top{
+        a{
+            display: inline-block; 
+            text-decoration: none;
+        }
+        p{
+            display: inline;
+        }
+        span{
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+     }
+}
+

@@ -1,0 +1,163 @@
+<div >
+    <div class="container  whole">
+        <div class="container pt-md-3 pt-lg-3 pt-sm-3">
+            <div class="card mt-lg-3  top-panel">
+                <div class="row gap-sm-3">
+                    <div class="col-lg-3 ">
+                        <img [src] = "service.myImage" class="image-border ms-lg-0 my-lg-auto  mt-sm-3 mx-auto d-block">
+                    </div>
+                    <div class="col-lg-6 mx-lg-auto">
+                        <div class="jumbtron mt-4 mt-lg-4 mt-sm-2">
+                            <h1 class="text-center">{{service.name | uppercase}} </h1>
+                            <h5 class="text-center">{{service.resume_destination}}</h5>
+                            
+                            <div class="top text-center">
+                                <a href="">{{service.eMail}}<span>|</span></a>
+                                <a href="www.swamiTheDev.com " class="pl-lg-3">www.swamiTheDev.com <span>|</span> </a>
+                                <p >{{service.address}}</p>
+                            </div>
+                        </div>
+                         
+                    </div>
+                    <div class="col-lg-2 my-lg-auto text-center">
+                        <ul>
+                            <li><a href="">Github</a></li>
+                            <li><a [routerLink]="linkedinId">LinkedIn</a></li>
+                            <li><a href="">phone</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="row mt-lg-4 m-2 pt-sm-2">
+        <!-- for left side panel -->
+            <div class=" card col-lg-3 p-lg-5 mt-md-2 p-md-5 pt-md-4 p-sm-3 pt-sm-3 left-panel" >
+                
+                <!-- Contact List -->
+                <div class="">
+                    <h3 class="underline mb-md-3 mb-sm-3">ABOUT ME</h3>
+                    <div class="row">
+                        <ol>
+                           <p>Date of Birth: {{service.dob}}</p>
+                           <p>Age: {{service.age}}</p>
+                           <p>Gender: {{service.gender}}</p>
+                        </ol>
+                    </div>
+                    <h3 class="underline mb-md-3 mb-sm-3">CONTACT</h3>
+                    <div class="row">
+                        <address>19/32, Municipal Hospital Street, Korand, Mayiladuthurai.</address>
+                        <p> +91 {{service.contactNumber}}</p>
+                        <p>{{service.eMail}}</p>
+                    </div>
+                    <h3 class="underline mb-md-3 mb-sm-3">INTERESTS</h3>
+                    <div class="row">
+                        <ul>
+                            <li >Travelling</li>
+                            <li >Racing</li>
+                            <li >Tea</li>
+                            <li >Editing</li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <h3 class="underline mb-md-3 mb-sm-3">LANGUAGES</h3>
+                        <p><strong>Tamil - </strong>Native </p>
+                        <p><strong>English - </strong>Intermediate </p>
+                    </div>
+                </div>
+            </div>
+            <!-- For this col is right side panel -->
+            <div class="col-lg-9 col-md-12 pt-sm-3">
+                <div class="card pt-md-2 mt-md-2 ms-md-0 mb-md-3 mt-lg-0">
+                    <!-- description -->
+                    <h4 class="m-3 underline ">Summary</h4>
+                    <p class="mt-0 p-3 p-sm-1 ms-sm-3">I'm an enthusiastic and detail-oriented Front-End Software Engineering seeking and entry-level position with company to use my skills in Coding, Troubleshooting Complex Problems, and assisting in the timely completion of projects.</p>
+                </div>
+                <div class="card mt-lg-3 p-lg-3 pt-md-3 pt-sm-3 mt-sm-3">
+                    <h3 class="some ps-md-3 ps-sm-3">EDUCATION</h3> 
+                    <!-- pg degree -->
+                    <div class="ps-md-2">
+                        <div class="deg p-md-3 pt-md-3 ps-sm-3">
+                            <h4> Master of Computer Applications,</h4>
+                            <h5>A.V.C College (Engineering) Mannampandal,Mayiladuthurai</h5>
+                            <p>2021 - present</p>
+                            <p>CGPA : 60% (AT PRESENT)</p> 
+                        </div>
+                        <!-- Ug degree -->
+                        <div class="deg p-md-3 pt-md-1 ps-sm-3">
+                            <h4> Bachelor of Computer Applications,</h4>
+                            <h5>A.V.C College (AUTONOMOUS) Mannampandal,Mayiladuthurai</h5>
+                            <p><em>2019 - 2021</em></p>
+                            <p >CGPA : 64%</p>
+                        </div>
+                        <div class="deg p-md-3 pt-md-1 ps-sm-3">
+                            <!-- high Secondary -->
+                            <h4>Higher Secondary Course </h4>
+                            <p><em>2018 - 2019</em></p>
+                            <h5>Rotary Club Matric Higher Secondary School,Mayiladuthurai</h5>
+                            <p>Percentage : 68%</p>
+                        </div>
+                        <div class="deg p-md-3 pt-md-1 ps-sm-3">
+                            <!--  Secondary -->
+                            <h5>Rotary Club Matric Higher Secondary School,Mayiladuthurai</h5>
+                            <h4>Secondary Course </h4>
+                            <p >Percentage : 80%</p>    
+                            <p><em>2015 - 2016</em></p>
+                        </div>
+                    </div>
+               </div>
+                <div class="card pt-md-3 mt-md-3 p-sm-2 mt-sm-3">
+                <h3 class="card text-center p-2 m-2">Technical Skills</h3>
+                <div class="row">
+                    <div class="col-lg-7 col-md-10 mx-md-auto me-lg-2 ps-md-3 mt-md-3 mt-sm-2 mx-sm-auto col-sm-10 ps-md-3 mb-sm-3 hard-skill">
+                        <h4 class="m-3 underline ps-sm-2">Hard Skills</h4>
+                        <div class="p-3">
+                            <h5 class="text-center pb-md-2 ">Markup Language</h5>
+                            <p class="ps ps-sm-3 pt-sm-2 " >HTML 5  <span class="ms-sm-3" >-</span> <span class="ms-sm-3 progress-bar progress-bar-success" role="progressbar" style="width:50%">90%</span></p>
+                            <h5 class="text-center pb-md-2">Stylesheet Language</h5>
+                            <p class="ps ps-sm-3 pt-sm-2">CSS 3<span class="ms-sm-3" >-</span><span class="ms-sm-3 progress-bar progress-bar-success" role="progressbar" style="width:50%">90%</span></p>
+                            <h5 class="text-center pb-md-2">StyleSheet Framework</h5>
+                            <p class="ps ps-sm-3 pt-sm-2">Bootstrap 5<span class="ms-sm-3" >-</span><span class="ms-sm-3  progress-bar progress-bar-success" role="progressbar" style="width:50%">90%</span></p>
+                            <h5 class="text-center pb-md-2">CSS Preprocessors</h5>
+                            <p class="ps ps-sm-3 pt-sm-2">SCSS<span class="ms-sm-3" >-</span><span class="ms-sm-3 progress-bar progress-bar-success" role="progressbar" style="width:50%">90%</span></p>
+                            <p class="ps ps-sm-3 pt-sm-2">SASS<span class="ms-sm-3" >-</span><span class="ms-sm-3 progress-bar progress-bar-success" role="progressbar" style="width:50%">90%</span></p>
+                            <h5 class="text-center pb-md-2">Scripting Language</h5>
+                            <p class="ps ps-sm-3 pt-sm-2">JavaScript<span class="ms-sm-3" >-</span><span class="ms-sm-3 progress-bar progress-bar-success" role="progressbar" style="width:50%">70%</span></p>
+                            <h5 class="text-center pb-md-2">Programming Language</h5>
+                            <p class="ps ps-sm-3 pt-sm-2">Typescript<span class="ms-sm-3" >-</span><span class="ms-sm-3 progress-bar progress-bar-success" role="progressbar" style="width:50%">80%</span></p>
+                            <h5 class="text-center pb-md-2">Front End Framework</h5>
+                            <p class="ps ps-sm-3 pt-sm-2">Angular<span class="ms-sm-3" >-</span><span class="ms-sm-3 progress-bar progress-bar-success" role="progressbar" style="width:50%">80%</span> </p>
+                            <h5 class="text-center pb-md-2">Version control</h5>
+                            <p class="ps ps-sm-3 pt-sm-2">Git<span class="ms-sm-3" >-</span><span class="ms-sm-3 progress-bar progress-bar-success" role="progressbar" style="width:50%">80%</span></p>
+                            <p class="ps ps-sm-3 pt-sm-2">Github<span class="ms-sm-3" >-</span><span class="ms-sm-3 progress-bar progress-bar-success" role="progressbar" style="width:50%">70%</span></p>
+                        </div>
+                    </div>
+                
+                    <div class="col-lg-4 col-md-10 col-sm-10 ms-lg-2 mb-lg-3 mt-lg-3 mt-md-4 mb-md-5 mx-md-auto ps-md-3 mb-sm-3 mx-sm-auto pb-sm-3  soft-skill">
+                        <h4  class="m-3 underline text-center ">Soft Skills</h4>
+                        <div class="p-md-3">
+                            <p class="ps-md-5 ps-lg-1">Empathy<span class="ms-sm-3" >-</span><span class="ms-sm-3 p11 progress-bar progress-bar-success" role="progressbar" style="width:50%">70%</span></p>
+                            <p class="ps-md-5 ps-lg-1">Time Management<span class="ms-sm-3" >-</span><span class="ms-sm-3 p12 progress-bar progress-bar-success" role="progressbar" style="width:22%">90%</span></p>
+                            <p class="ps-md-5 ps-lg-1">Teamwork<span class="ms-sm-3" >-</span><span class="ms-sm-3  p13 progress-bar progress-bar-success" role="progressbar" style="width:50%">80%</span></p>
+                            <p class="ps-md-5 ps-lg-1">Creativity<span class="ms-sm-3" >-</span><span class="ms-sm-3 p14 progress-bar progress-bar-success" role="progressbar" style="width:50%">90%</span></p>
+                            <p class="ps-md-5 ps-lg-1">Communication<span class="ms-sm-3" >-</span><span class="ms-sm-3 p15 progress-bar progress-bar-success" role="progressbar" style="width:30%">70%</span></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-9 col-md-12 pt-sm-3">
+                        <div class="card pt-md-2 mt-md-2 ms-md-0 mb-md-3 mt-lg-0">
+                            <p>Projects</p>
+                                <
+                        </div>
+
+                    </div>
+               </div>
+            </div>
+               
+            </div>
+                <div class="card mt-lg-3 p-lg-3 mb-lg-3 mt-md-3 mb-md-3 mt-sm-3 mb-sm-3">
+                    <h4  class="underline pt-md-3 m-sm-3 ">Declaration</h4>
+                    <p class="pt-lg-2 ms-sm-3">I hereby declare that the above information regarding me are true to my knowledge and I assure you that i will work smart to satify your needs.</p>
+               </div>
+        </div>
+    </div>
+</div>
